@@ -235,17 +235,6 @@ Ext.define('Ext.ux.picker.DateTime', {
 		  me.onSelect();
 	  }
 	  return me;
-	},
-
-  xonFocusLeave: function(e) {
-    var me = this;
-    me.callParent([
-      e
-    ]);
-    return;
-    var me = this;
-    if (!e.within(me.timeEl))
-      me.callParent(arguments);
-  },
+	}
 
 });
