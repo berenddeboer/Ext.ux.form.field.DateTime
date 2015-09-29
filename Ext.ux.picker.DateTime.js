@@ -6,12 +6,6 @@
  *
  */
 
-Ext.define("Ext.locale.en.ux.picker.DateTime", {
-	override: "Ext.ux.picker.DateTime",
-	todayText: "Now",
-	timeLabel: 'Time'
-});
-
 Ext.define('Ext.ux.picker.DateTime', {
 	extend: 'Ext.picker.Date',
 	alias: 'widget.datetimepicker',

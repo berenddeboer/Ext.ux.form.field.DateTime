@@ -9,7 +9,7 @@
 Ext.define('Ext.ux.form.field.DateTime', {
 	extend: 'Ext.form.field.Date',
 	alias: 'widget.datetimefield',
-	requires: ['Ext.ux.picker.DateTime'],
+	uses: ['Ext.ux.picker.DateTime'],
 
   /**
    * @cfg timeFormat
@@ -26,8 +26,6 @@ Ext.define('Ext.ux.form.field.DateTime', {
    */
 	collapseIf: function(e) {
     var me = this;
-    console.log (me.picker.timeEl)
-    console.log (e.within(me.picker.timeEl))
     if (!e.within(me.picker.timeEl)) {
       me.callParent(arguments);
     }
